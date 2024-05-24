@@ -10,7 +10,6 @@
 .container {
   background-color: rgb(233, 223, 213);
   min-height: 100vh;
-  height: 100%;
   padding: 20px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -22,6 +21,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .logo {
   display: flex;
   justify-content: flex-start;
@@ -33,18 +33,17 @@
   padding: 10px 15px;
   border-radius: 15px;
   border: none;
-  /* margin-left: 15px; */
+  color: white;
+  font-weight: 700;
   background: linear-gradient(
     to bottom right,
     rgb(249, 191, 77),
     rgb(245, 142, 101)
   );
-  color: white;
-  font-weight: 700;
 }
 
 .main {
-  margin: 30px;
+  padding: 30px 0;
 }
 
 .hero-img {
@@ -53,7 +52,7 @@
   align-items: center;
 }
 .hero-img > img {
-  width: 300px;
+  width: 250px;
 }
 .hero-img .absolute {
   position: absolute;
@@ -75,7 +74,7 @@
 .hero-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
 }
 
@@ -93,17 +92,16 @@
 .hero-text > p {
   font-size: 1.2rem;
   line-height: 1.5rem;
-  /* padding: 0.8rem; */
-  margin: 0.8rem;
+  margin: 1rem;
 }
 
 .hero-text > form {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: start;
   gap: 0.5rem;
-  width: 100%;
+  width: 90%;
   margin: 1rem;
 }
 
@@ -113,7 +111,7 @@
   border: none;
   border-radius: 0.2rem;
   font-size: 0.9rem;
-  width: 90%;
+  width: 100%;
 }
 
 .hero-text > form input#submit-btn {
@@ -125,21 +123,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 1rem;
 }
 
 .footer > .social-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1rem;
-  /* gap: 2rem; */
-}
-.footer > .social-icon img {
-  width: 50px;
+  margin-bottom: 2rem;
+  gap: 1rem;
 }
 
-.footer > .social-icon img:nth-child(2) {
-  width: 85px;
+.footer > .social-icon img {
+  width: 40px;
 }
 
 .footer .expert-doubt {
