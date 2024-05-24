@@ -21,6 +21,10 @@
   justify-content: space-between;
   align-items: center;
 }
+.header-nav,
+.header-btn {
+  display: none;
+}
 
 .logo {
   display: flex;
@@ -144,4 +148,126 @@
   align-items: center;
   gap: 1rem;
   padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  /* body {
+    display: none;
+  } */
+  .container {
+    padding: 20px;
+    /* height: 100vh; */
+  }
+  .header-nav,
+  .header-btn {
+    display: none;
+  }
+
+  .logo > button {
+    background: linear-gradient(
+      to bottom right,
+      rgb(241 200 120),
+      rgb(238 28 94)
+    );
+  }
+  .hero-text > form {
+    flex-direction: row;
+    width: 100%;
+    justify-content: start;
+  }
+  .hero-text > form input#email,
+  .hero-text > form input#submit-btn {
+    padding: 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+    width: 50%;
+  }
+  .hero-text > form input#submit-btn {
+    width: 25%;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+  }
+  .footer > .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0rem;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header,
+  .footer {
+    padding: 0 1rem;
+  }
+  .header-nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  .header-nav ul li {
+    margin-left: 1rem;
+  }
+
+  .header-nav ul a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #000;
+  }
+  .header,
+  .footer,
+  .main {
+    width: 950px;
+    margin: 0 auto;
+  }
+  .main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    height: 77vh;
+  }
+  .header-nav,
+  .header-btn {
+    display: block;
+  }
+  .hero-text,
+  .hero-img {
+    flex: 1;
+  }
+  .hero-img {
+    justify-content: flex-end;
+  }
+  .fa-solid {
+    display: none;
+  }
+  .btn {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+    margin-left: 10px;
+    transition: hover 1s;
+  }
+  .btn-blue {
+    background-color: rgb(24, 119, 242);
+    color: #fff;
+  }
+  .btn:hover {
+    background-color: #fff;
+    color: rgb(24, 119, 242);
+  }
+  .hero-text > form input#email {
+    width: 65%;
+  }
+  .hero-text > form input#submit-btn {
+    width: 30%;
+  }
 }
